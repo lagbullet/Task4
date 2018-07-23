@@ -19,7 +19,10 @@ namespace AnimalsApp
             return "Beee";
         }
 
-        public Sheep() { }
+        public void Show()
+        {
+            Console.WriteLine("Here is a Sheep: {0} Age : {1} -- {2}", Name, Age, Talk());
+        }
 
         public Sheep(string name, int age)
         {

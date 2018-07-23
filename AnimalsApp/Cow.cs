@@ -19,7 +19,10 @@ namespace AnimalsApp
             return "Moo";
         }
 
-        public Cow() { }
+        public void Show()
+        {
+            Console.WriteLine("Here is a Cow: {0} Age : {1} -- {2}", Name, Age, Talk());
+        }
 
         public Cow(string name, int age)
         {

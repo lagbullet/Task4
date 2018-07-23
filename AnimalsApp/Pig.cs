@@ -19,8 +19,11 @@ namespace AnimalsApp
             return "Sqee";
         }
 
-        public Pig() { }
-
+        public void Show()
+        {
+            Console.WriteLine("Here is a Pig: {0} Age : {1} -- {2}", Name, Age, Talk());
+        }
+        
         public Pig(string name, int age)
         {
             Name = name;

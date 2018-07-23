@@ -10,5 +10,7 @@ namespace AnimalsApp
     {
         string Talk();
         string Name { get; set; }
+        int Age { get; set; }
+        void Show();
     }
 }

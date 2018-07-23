@@ -10,16 +10,15 @@ namespace AnimalsApp
     {
         static void Main(string[] args)
         {
-            Group groups = new Group();
-            groups.AddNew("Cow", "qwerty", 10);
-            groups.AddNew("Pig", "asdfgh", 3);
-            groups.AddNew("Cat", "zxcvbn", 4);
-            groups.AddNew("Dog", "bghtyh", 5);
-            groups.AddNew("Sheep", "edsqwa", 2);
-            groups.Show();
-            Console.WriteLine(groups.CowTalk());
+            Group<IAnimal> group = new Group<IAnimal>();
+            group.Add(new Pig("Pig", 3));
+            group.Add(new Cat("Cat", 5));
+            group.Add(new Dog("Dog", 8));
+            group.Add(new Cow("Cow", 6));
+            group.Add(new Sheep("Sheep", 6));
+            group.Show();
             Console.ReadKey();
-
         }
     }
+
 }
